@@ -100,3 +100,10 @@ animation = &"run"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=701587143]
 position = Vector2(0, 10)
 shape = SubResource("CircleShape2D_qp6yi")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=222062971]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
