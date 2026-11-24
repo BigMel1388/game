@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cromvg0f1dqfq"]
 
 [ext_resource type="Texture2D" uid="uid://cj6t75dbkem1n" path="res://entities/slime/Monster_Slime_Hurt-Sheet.png" id="1_73j6m"]
+[ext_resource type="Script" uid="uid://c426g2aptth6x" path="res://entities/slime/slime.gd" id="1_gg6wn"]
 [ext_resource type="Texture2D" uid="uid://d2i24ow34uc7" path="res://entities/slime/Monster_Slime_Walk-Sheet.png" id="2_axkfb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pl1ty"]
@@ -100,11 +101,17 @@ animations = [{
 "speed": 9.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_wp4xf"]
+radius = 4.0
+
 [node name="slime" type="CharacterBody2D" unique_id=771944371]
+script = ExtResource("1_gg6wn")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=292872040]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=932323822]
+[node name="slime animation" type="AnimatedSprite2D" parent="." unique_id=932323822]
 sprite_frames = SubResource("SpriteFrames_yi6u1")
 animation = &"walk"
-frame_progress = 0.7010749
+frame_progress = 0.43740708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=292872040]
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_wp4xf")
