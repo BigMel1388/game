@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dsl776782qdel" path="res://asset/Dungeon_Tileset.png" id="1_2mjmj"]
 [ext_resource type="PackedScene" uid="uid://byque4w54oowj" path="res://player/player.tscn" id="2_xdmp7"]
-[ext_resource type="PackedScene" uid="uid://cromvg0f1dqfq" path="res://entities/slime/slime.tscn" id="3_l8a57"]
+[ext_resource type="PackedScene" uid="uid://cromvg0f1dqfq" path="res://entities/slime/slime.tscn" id="3_2mjmj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wp4xf"]
 texture = ExtResource("1_2mjmj")
@@ -130,6 +130,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_wp4xf")
 
 [node name="main" type="Node2D" unique_id=262985026]
+y_sort_enabled = true
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=394967309]
 offset_left = -984.0
@@ -150,20 +151,5 @@ scale = Vector2(0.5781876, 0.5781876)
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=128703372]
 zoom = Vector2(2, 2)
 
-[node name="slime" parent="." unique_id=771944371 instance=ExtResource("3_l8a57")]
-position = Vector2(415, 68)
-
-[node name="slime2" parent="." unique_id=1799601260 instance=ExtResource("3_l8a57")]
-position = Vector2(756, 136)
-
-[node name="slime3" parent="." unique_id=640568085 instance=ExtResource("3_l8a57")]
-position = Vector2(1134, 204)
-
-[node name="slime4" parent="." unique_id=890351731 instance=ExtResource("3_l8a57")]
-position = Vector2(1512, 272)
-
-[node name="slime5" parent="." unique_id=1157148278 instance=ExtResource("3_l8a57")]
-position = Vector2(1024, 572)
-
-[node name="slime6" parent="." unique_id=1123296238 instance=ExtResource("3_l8a57")]
-position = Vector2(1136, 586)
+[node name="slime" parent="." unique_id=771944371 instance=ExtResource("3_2mjmj")]
+position = Vector2(339, 52)

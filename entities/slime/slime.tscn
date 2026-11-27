@@ -102,15 +102,14 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wp4xf"]
-radius = 4.0
+radius = 5.0990195
 
 [node name="slime" type="CharacterBody2D" unique_id=771944371]
 script = ExtResource("1_gg6wn")
 
-[node name="slime animation" type="AnimatedSprite2D" parent="." unique_id=932323822]
+[node name="slime_animation" type="AnimatedSprite2D" parent="." unique_id=932323822]
 sprite_frames = SubResource("SpriteFrames_yi6u1")
-animation = &"walk"
-frame_progress = 0.43740708
+animation = &"hurt"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=292872040]
 position = Vector2(0, 4)
